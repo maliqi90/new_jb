@@ -156,7 +156,7 @@ BOOL allow_loop_receive(void);
 void register_loop_short_callback(void (*call_back)(u8 channel));
 
 void loop_send_5V(u8 channel);
-
+extern uint8_t loop_short_flag;
 
 
 #endif

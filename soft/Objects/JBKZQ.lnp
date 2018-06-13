@@ -3,7 +3,6 @@
 ".\objects\main.o"
 ".\objects\stm32f10x_it.o"
 ".\objects\usbtask.o"
-".\objects\dialog_slidercolor.o"
 ".\objects\misc.o"
 ".\objects\stm32f10x_adc.o"
 ".\objects\stm32f10x_bkp.o"

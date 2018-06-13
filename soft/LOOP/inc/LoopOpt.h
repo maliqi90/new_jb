@@ -29,7 +29,7 @@
 #define Len334us    334      // 24V和发码过程中的0V,5V的长度
 
 /******************************************************************************/
-extern volatile LOOPS LOOP[ 2 ];   // 定义回路结构型回路变量。
+extern  LOOPS LOOP[ 2 ];   // 定义回路结构型回路变量。
 extern LOOPDevice ALLDevices[2][256]; // 每个回路上256个回路器件型结构空间
 extern u8  OptingLoopNO;      // 当前正在操作的回路号0，1
 extern u32 CheckTypeTimeTicks;   // 回路定期做器件类型检查，此变量是用于这个事情的时间计数器

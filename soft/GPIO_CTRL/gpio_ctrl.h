@@ -195,6 +195,6 @@ extern uint32_t ADC_Check(void);
 extern void read_power(void);
 extern void power_off(void);
 extern volatile uint8_t powernum;
-extern void Loop_18V_Curr_EXTI3_Config(void);
+extern void Loop_18V_Curr_EXTI1_Config(void);
 #endif
 

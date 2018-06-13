@@ -20,7 +20,7 @@
 
 extern  const DEVICE_TYPE device_type1[];
 //extern u16   dev_addr; 
-extern volatile LOOPS LOOP[2]; 
+extern  LOOPS LOOP[2]; 
 //u16 dev_addr ; 
 u8	 send_buff[8];
 u8	 loop_num 		= 0;
@@ -163,6 +163,7 @@ void loop_short(u8 channel)							//回路短路处理
 //		can_send(1, dev_addr + channel, 0, 7, send_buff);
 
 		LOOP[channel].OptStatFlags.StateBit.ShortReported_flag = 1;
+			loop_short_flag = 1;
     }
 }
 

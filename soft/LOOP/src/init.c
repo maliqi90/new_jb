@@ -21,7 +21,39 @@ void RCC_CONFIG(void)
 
 	RCC->AHBENR  = 0;
 }
+//void Loop_18V_Curr_EXTI1_Config(void)
+//{
+//    EXTI_InitTypeDef   EXTI_InitStructure;
+//    GPIO_InitTypeDef   GPIO_InitStructure;
+//    NVIC_InitTypeDef   NVIC_InitStructure;
+//  /* Enable GPIOE clock */
+//  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOE, ENABLE);
+//  
+//  /* Configure PE.03 pin as input floating */
+//  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;
+//  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+//  GPIO_Init(GPIOE, &GPIO_InitStructure);
 
+//  /* Enable AFIO clock */
+//  RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+
+//  /* Connect EXTI0 Line to PE.01 pin */
+//  GPIO_EXTILineConfig(GPIO_PortSourceGPIOE, GPIO_PinSource1);
+
+//  /* Configure EXTI1 line */
+//  EXTI_InitStructure.EXTI_Line = EXTI_Line1;
+//  EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+//  EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising_Falling;  
+//  EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+//  EXTI_Init(&EXTI_InitStructure);
+
+//  /* Enable and set EXTI0 Interrupt to the lowest priority */
+//  NVIC_InitStructure.NVIC_IRQChannel = EXTI1_IRQn;
+//  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x0F;
+//  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x0F;
+//  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+//  NVIC_Init(&NVIC_InitStructure);	
+//}
 /*******************************************************************************
  函 数 名    ：GPIO_CONFIG
  功能描述：GPIO 配置
@@ -369,7 +401,7 @@ void LOOP_CONFIG(void)
    TIM2_CONFIG();
 //TIM3_CONFIG();    
    TIM4_CONFIG();  
-  // Loop_18V_Curr_EXTI3_Config();    
+   Loop_18V_Curr_EXTI1_Config();    
 }
 //主备电切换初始化
 void Power_Sw_Init(void)

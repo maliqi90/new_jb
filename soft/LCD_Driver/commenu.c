@@ -1679,6 +1679,16 @@ void Read_Time_Bkp(void)
 	Timer_value.hour = BKP_ReadBackupRegister(BKP_DR5);
 	Timer_value.min = BKP_ReadBackupRegister(BKP_DR6);
 	Timer_value.sec = BKP_ReadBackupRegister(BKP_DR7);
+  if(Timer_value.year == 0)
+	{
+		Timer_value.year = 2018;
+		Timer_value.month = 6;
+		Timer_value.date = 18;
+		Timer_value.hour = 8;
+		Timer_value.min = 30;
+		Timer_value.sec = 0;
+		
+	}
 }
 
 /*

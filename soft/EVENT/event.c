@@ -569,7 +569,44 @@ void EventTask(void)
 			}
 			
 		break;
-		
+		 case EVENT_TYPE_LOOPFAULT_RESUME:
+		     for(i = EventRamTaskPointer; i < EventRamCurrentPointer; i++)
+			 {
+				if (EventRamType[i] == EVENT_TYPE_LOOPFAULT_RESUME)
+				{
+					for (j = 0; j < i; j++)
+                    {
+                       if (
+							(EventRamBuffer[j].EventCode		 ==	EVENT_TYPE_LOOP_FAULT)  &&
+							(EventRamBuffer[j].EventDeviceType	 ==	EventRamBuffer[i].EventDeviceType)   &&
+							(EventRamBuffer[j].EventAddress		 == EventRamBuffer[i].EventAddress))
+						{
+							EventRamType[j] = 0xff;
+										
+							if (EventFaultCount)
+								EventFaultCount--;                            
+                        }                            
+                    }
+				}					
+			 }
+           EventFaultRamCurrentPointer = 0;
+			
+			for (i = 0; i <= EventRamTaskPointer; i++)
+			{
+				if ((EventRamType[i] == EVENT_TYPE_FAULT)||(EventRamType[i] == EVENT_TYPE_LOOP_FAULT)||(EventRamType[i] == EVENT_TYPE_POWER_FAULT)||(EventRamType[i] == EVENT_TYPE_BATPOWER_FAULT)||(EventRamType[i] == EVENT_TYPE_LOOP_FAULT))
+				{
+					memcpy(&EventFaultRamBuffer[EventFaultRamCurrentPointer], &EventRamBuffer[i], 32);
+					EventFaultRamCurrentPointer++;
+					
+					if (EventFaultRamCurrentPointer == EVENT_FAULT_COUNT)
+					{
+						EventFaultRamCurrentPointer = 0;
+					}
+				}
+			}
+            if (EventFaultRamCurrentPointer != EventFaultCount)
+				EventFaultCount = EventFaultRamCurrentPointer;
+			 break;
 		case EVENT_TYPE_FAULT_RESUME: //故障恢复
 		     for(i = EventRamTaskPointer; i < EventRamCurrentPointer; i++)
 			 {

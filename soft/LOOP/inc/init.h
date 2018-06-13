@@ -6,10 +6,10 @@
 #define LOOP_FIVE_PIN       GPIO_Pin_2//GPIO_Pin_7
 
 #define LOOP_SHORT_CRT     GPIOE //回路短路检测引脚,过流
-#define LOOP_SHORT_PIN     GPIO_Pin_3
+#define LOOP_SHORT_PIN     GPIO_Pin_1
 
 #define LOOP_SHORT_V_CRT  GPIOE //回路短路过压检测
-#define LOOP_SHORT_V_PIN  GPIO_Pin_4
+#define LOOP_SHORT_V_PIN  GPIO_Pin_0
 
 #define LOOP_HIGH_CTR      GPIOE //回路18V控制引脚
 #define LOOP_HIGH_PIN      GPIO_Pin_3//GPIO_Pin_2

@@ -17,7 +17,7 @@
 
 loop_hw loop_val;
 
-
+uint8_t loop_short_flag = 0;
 /**************************************************************************
  函 数 名    ：loop_send
  功能描述：回路发0V
@@ -529,7 +529,18 @@ void TIM3_IRQHandler(void)
 	}			
 }
 
-
+void loopshort_re(void)
+{
+		uint8_t send_buff[7];
+		send_buff[0] = 0;
+		send_buff[1] = EVENT_TYPE_LOOPFAULT_RESUME;
+		send_buff[2] = 230;
+		send_buff[3] = 0xFE;
+		send_buff[4] = 0;
+		send_buff[5] = 0;
+		send_buff[6] = 0;
+		Loop_Revice(send_buff);
+}
 /**************************************************************************
  函 数 名    ：TIM2_IRQHandler
  功能描述：定时器2中断程序计时短路时间(50mS中断)
@@ -545,29 +556,6 @@ void TIM2_IRQHandler(void)
 	if (TIM2->SR & (1 << 0))
 	{
 		TIM2->SR &= ~(1 << 0);
-
-		if (loop_val.sht[CHANNEL_1] == TRUE)
-		{
-			if (GPIOB->IDR & (1 << 15))
-			{
-				if (loop1_cnt <= LOOP_SHORT_TIME)
-					loop1_cnt++;
-
-				if (loop1_cnt == LOOP_SHORT_TIME)
-				{
-					if (loop_val.short_callback != NULL)
-						loop_val.short_callback(CHANNEL_1);	
-						
-					loop_power_disable(CHANNEL_1);
-				}
-			}
-			else
-			{
-				loop1_cnt = 0;
-				loop_val.sht[CHANNEL_1] = FALSE;
-			}
-		}
-
 		if (loop_val.sht[CHANNEL_2] == TRUE)
 		{
 			if ((LOOP_SHORT_CRT->IDR & (LOOP_SHORT_PIN)) == 0)
@@ -584,9 +572,19 @@ void TIM2_IRQHandler(void)
 				}
 			}
 			else
-			{
-				loop2_cnt = 0;
-				loop_val.sht[CHANNEL_2] = FALSE;
+			{  
+
+
+				 loop2_cnt = 0;
+				 loop_val.sht[CHANNEL_2] = FALSE;
+				
+				 if(loop_short_flag == 1)
+				 {
+					 loop_short_flag = 0;
+					 loopshort_re();
+					 LOOP[1].OptStatFlags.StateBit.ShortReported_flag = 0;
+
+				 }
 			}
 		}
 	}	

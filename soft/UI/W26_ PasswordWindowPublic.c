@@ -72,7 +72,7 @@ void W26_PasswordWindowProcess(void)
         case KEY_UP:
              if(password_pointer == 0)
              {
-                 if(lastwindows == 8)//…Ë÷√√‹¬Î
+                 if((lastwindows == 8)||(lastwindows == 22))//…Ë÷√√‹¬Î/ªÿ¬∑µ«¬º
                  {
                       pass_flag++;
                  }
@@ -85,7 +85,7 @@ void W26_PasswordWindowProcess(void)
              }
              if(password_pointer == 2)
              {
-                 if(lastwindows == 8)//…Ë÷√√‹¬Î
+                 if((lastwindows == 8)||(lastwindows == 22))//…Ë÷√√‹¬Î
                  {
                       pass_flag++;
                  }
@@ -107,7 +107,7 @@ void W26_PasswordWindowProcess(void)
         case KEY_DOWN:
              if(password_pointer == 1)
              {
-                 if(lastwindows == 8)//…Ë÷√√‹¬Î
+                 if((lastwindows == 8)||(lastwindows == 22))//…Ë÷√√‹¬Î
                  {
                       pass_flag++;
                  }
@@ -116,7 +116,7 @@ void W26_PasswordWindowProcess(void)
              }
              if(password_pointer == 3)
              {
-                 if(lastwindows == 8)//…Ë÷√√‹¬Î
+                 if((lastwindows == 8)||(lastwindows == 22))//…Ë÷√√‹¬Î
                  {
                       pass_flag++;
                  }

@@ -31,11 +31,12 @@
 //#include "communication.h"
 #include "DeviceTypeDefine.h"
 #include "def.h"
+#include "event.h"
 /******************************************************************************/
 extern u16 dev_addr; 
 extern const u8 DEVICE_IO_TYPE[256];
 
-volatile LOOPS LOOP[2];               			// 定义回路结构型回路变量。
+ LOOPS LOOP[2];               			// 定义回路结构型回路变量。
 LOOPDevice ALLDevices[2][256]; 			// 每个回路上256个回路器件型结构空间
 u8  OptingLoopNO;                   	// 当前正在操作的回路号0，1
 u32 CheckTypeTimeTicks;             	// 回路定期做器件类型检查，此变量是用于这个事情的时间计数器
@@ -222,7 +223,7 @@ void LoopListInit( u8 LN )
 void LoopShortChk(u8 LN)
 {
     u32 timer;
-
+    uint8_t send_buff[7];
     if (LOOP[LN].OptStatFlags.StateBit.ShortPowerOff_flag) // 回路LN已经因短路关闭电源
     { 
         timer = GetTickCount();
@@ -233,14 +234,14 @@ void LoopShortChk(u8 LN)
         	LOOP[LN].OptStatFlags.StateBit.ShortPowerOff_flag = 0;   // 开始回路供电恢复过程
 //            LOOP[LN].OptStatFlags.StateBit.LPLineIsShort_flag = 0;
 //            LOOP[LN].LoopShortCntTick = 0;
-			LOOP[LN].LoopShortCntTick = timer;
-			 
-            loop_power_on(LN);		//回路上电
+					//LOOP[1].OptStatFlags.StateBit.ShortReported_flag = 0;
+			    LOOP[LN].LoopShortCntTick = timer;
+          loop_power_on(LN);		//回路上电
         }
     }
     else
     {
-		if (!LOOP[LN].OptStatFlags.StateBit.ShortPowerOff_flag && LOOP[LN].OptStatFlags.StateBit.LPLineIsShort_flag)
+		 if (!LOOP[LN].OptStatFlags.StateBit.ShortPowerOff_flag && LOOP[LN].OptStatFlags.StateBit.LPLineIsShort_flag)
 		{
 			timer = GetTickCount();
 

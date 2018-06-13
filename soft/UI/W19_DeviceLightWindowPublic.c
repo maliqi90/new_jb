@@ -10,7 +10,7 @@
 //#include "communication.h"
 #include "DeviceTypeDefine.h"
 #include "def.h"
-extern volatile LOOPS LOOP[2]; 
+extern  LOOPS LOOP[2]; 
 extern char * _aTable_1[18][5];
 static uint8_t select = 0;
 static uint8_t select_num = 0;

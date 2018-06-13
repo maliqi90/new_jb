@@ -273,11 +273,11 @@ void GPIO_Ctrl_Init(void)
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;
   GPIO_Init(GPIOD, &GPIO_InitStructure);
-LED_ALARM_ON;
-LED_FAULT_ON;
-LED_SELTFTTEST_ON;
-LED_BAT_ON;
-LED_POWER_ON;
+  LED_ALARM_ON;
+  LED_FAULT_ON;
+  LED_SELTFTTEST_ON;
+  LED_BAT_ON;
+  LED_POWER_ON;
 
     TIMDelay_Nms(500);
     TIMDelay_Nms(500);
@@ -301,7 +301,7 @@ LED_POWER_ON;
 	}
 	else
 	{
-		power_bat_flag = 1;
+		 power_bat_flag = 1;
 		 send_buff[1] = EVENT_TYPE_POWER_FAULT;
      send_buff[2] = 230;
      send_buff[3] = 0xFE;

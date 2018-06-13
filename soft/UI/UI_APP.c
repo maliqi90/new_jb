@@ -520,6 +520,11 @@ void WinKeyProcess(void)
                             lastwindows = 13;
                              WinLoad(26);
                          }
+												 else if(winindex == 22)
+												 {
+                            lastwindows = 22;
+                             WinLoad(26);													 
+												 }
                          else
                          {
                           if(winindex == 0)
@@ -608,8 +613,15 @@ void WinKeyProcess(void)
                 {
                     WinPointer = 4;//初始化光标指针
                     WinLoad(8);   
-                     lastwindows =0;                    
+                    lastwindows =0;                    
                 }
+								else if(lastwindows == 22)
+								{
+                
+                    WinPointer = 3;//初始化光标指针
+                    WinLoad(3);   
+                    lastwindows =0; 									
+								}
 
             }
             else

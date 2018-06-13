@@ -374,6 +374,7 @@ u8 time_num(void)
 	Timer_value.hour=temp/3600;     	//小时
   Timer_value.min=(temp%3600)/60; 	//分钟	
 	Timer_value.sec=(temp%3600)%60; 	//秒钟
+
 	Save_Time_Bkp();  //把时间写入BKP 存储器 （D2:年 D3:月 D4:日 D5:时 D6:分 D7:秒 ）
 return 1;
 }

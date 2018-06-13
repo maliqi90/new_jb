@@ -370,7 +370,7 @@
             <vShortEn>0</vShortEn>
             <vShortWch>0</vShortWch>
             <VariousControls>
-              <MiscControls>--C99</MiscControls>
+              <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER ,STM32F10X_HD</Define>
               <Undefine></Undefine>
               <IncludePath>.\Libraries\CMSIS\CM3\CoreSupport;.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\USBCDC\inc;.\User\inc;.\Libraries\STM32_USB-FS-Device_Driver\inc;.\LCD_Driver;.\FLASH;.\GPRS;.\LOOP\inc;.\VOICE;.\GPIO_CTRL;.\RTC;.\Emwin\Config;.\Emwin\inc;.\UI;.\EVENT;.\CAN;.\DEVICE;.\Emwin\emWinTask;.\Emwin\inc;.\DEVICE;.\cm_backtrace</IncludePath>
@@ -435,11 +435,6 @@
               <FileName>usbtask.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User\src\usbtask.c</FilePath>
-            </File>
-            <File>
-              <FileName>DIALOG_SliderColor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\User\src\DIALOG_SliderColor.c</FilePath>
             </File>
           </Files>
         </Group>

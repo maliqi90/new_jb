@@ -92,11 +92,11 @@ void ShieldWindows(void)
    GUI_SetColor(GUI_BLACK);
    GUI_SetBkColor(GUI_WHITE);     
    GUI_SetFont(&GUI_Font24_1);
-   GUI_DispStringAt("<",130,215);
-   GUI_DispDecAt(page+1,142,215,1);
-   GUI_DispStringAt("/",152,215);
-   GUI_DispDecAt(page_total,160,215,1);
-   GUI_DispStringAt(">",172,215);
+   GUI_DispStringAt("<",30,215);
+   GUI_DispDecAt(page+1,42,215,1);
+   GUI_DispStringAt("/",52,215);
+   GUI_DispDecAt(page_total,60,215,1);
+   GUI_DispStringAt(">",72,215);
 
 }
 void W6_ShieldWindowDisplay(void)

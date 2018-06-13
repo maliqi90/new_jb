@@ -79,7 +79,7 @@ int main(void)
    SysTick_Config(SystemCoreClock /1000);
    RCC->AHBENR  |= (1<<6);
    sFLASH_Hardware_Init();
-    
+    	Read_Time_Bkp();
    TIMER6_Init();//延时定时器初始化
     TIMDelay_Nms(500);
     TIMDelay_Nms(500);
@@ -90,9 +90,10 @@ int main(void)
 
     GUI_Init();
     //WinLoad(W2_MAIN_WINDOW_WIN);
-        PWM_Set(500);
+     PWM_Set(500);
 	    EventInit();
-    GPIO_Ctrl_Init();
+	 //time_show();
+      GPIO_Ctrl_Init();
   LOOP_CONFIG();
 
     TIM5_CONFIG();//按键扫描定时器初始化
@@ -150,7 +151,7 @@ int main(void)
 //		Timer_value.sec=00;
 //		Write_Time_RTC();
 //     Save_Time_Bkp();
-//     time_show();   
+       
     norflash_read_comm_set((uint8_t *)&comm_set);     
      UART2_Init();    
 //    Led_Ctrl(LEDBAT_ON);
