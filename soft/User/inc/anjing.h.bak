@@ -1,0 +1,4 @@
+#ifndef __ANJING_H__
+#define __ANJING_H__
+const uint8_t  anjing[]={};
+#endif
