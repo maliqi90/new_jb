@@ -175,6 +175,7 @@ void RTC_IRQHandler(void)
            {
                   LISTVIEW_Delete(W22_hListView);
                   PROGBAR_Delete(LoopBar);
+						     loop_login_flag = 0;
                   GUI_Exec();  
            }
            else if(WinIndex == W20_LIGHT_SET_WINDOW_WIN)
@@ -212,6 +213,7 @@ void RTC_IRQHandler(void)
                    {
                           LISTVIEW_Delete(W22_hListView);
                           PROGBAR_Delete(LoopBar);
+										      loop_login_flag = 0;
                           GUI_Exec();  
                    }
                    else if(WinIndex == W20_LIGHT_SET_WINDOW_WIN)

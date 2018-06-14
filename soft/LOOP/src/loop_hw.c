@@ -558,8 +558,9 @@ void TIM2_IRQHandler(void)
 		TIM2->SR &= ~(1 << 0);
 		if (loop_val.sht[CHANNEL_2] == TRUE)
 		{
-			if ((LOOP_SHORT_CRT->IDR & (LOOP_SHORT_PIN)) == 0)
+			if (((LOOP_SHORT_CRT->IDR & (LOOP_SHORT_PIN)) == 0)||((GPIOE->IDR)&(GPIO_Pin_0)) == 0)
 			{
+				loop1_cnt = 0;
 				if (loop2_cnt <= LOOP_SHORT_TIME)
 					loop2_cnt++;
 
@@ -571,20 +572,28 @@ void TIM2_IRQHandler(void)
 					loop_power_disable(CHANNEL_2);
 				}
 			}
-			else
+			else if((GPIOE->IDR&0x03) == 0x03)
 			{  
 
-
 				 loop2_cnt = 0;
-				 loop_val.sht[CHANNEL_2] = FALSE;
-				
-				 if(loop_short_flag == 1)
-				 {
-					 loop_short_flag = 0;
-					 loopshort_re();
-					 LOOP[1].OptStatFlags.StateBit.ShortReported_flag = 0;
+				if(loop1_cnt <= LOOP_SHORT_TIME)
+				{
+					loop1_cnt++;
+				}
+				if(loop1_cnt == LOOP_SHORT_TIME)
+				{
+				   if(loop_short_flag == 1)
+				   {
+					   loop_short_flag = 0;
+					   loopshort_re();
+					   LOOP[1].OptStatFlags.StateBit.ShortReported_flag = 0;
+						 loop_val.sht[CHANNEL_2] = FALSE;
 
-				 }
+				   }					
+				}
+				 
+				
+
 			}
 		}
 	}	
@@ -644,7 +653,7 @@ void loop_power_on(u8 channel)
 //	u32 i, j;
 //	#define LOOP_CHARGE_PWM_HIGH 200
 
-	loop_val.sht[channel] = FALSE;
+	//loop_val.sht[channel] = FALSE;
 	loop_power_enable(channel);
 
 	// ÒÀ´ÎÔö¼ÓÂö¿í//8ms*10

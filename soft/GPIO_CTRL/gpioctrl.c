@@ -755,6 +755,44 @@ void Loop_18V_Curr_EXTI1_Config(void)
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
 }
+/**
+  *@breif 18V短路保护中断配置
+  *
+  *
+*/
+void Loop_18V_Volt_EXTI0_Config(void)
+{
+    EXTI_InitTypeDef   EXTI_InitStructure;
+    GPIO_InitTypeDef   GPIO_InitStructure;
+    NVIC_InitTypeDef   NVIC_InitStructure;
+  /* Enable GPIOE clock */
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOE, ENABLE);
+  
+  /* Configure PE.03 pin as input floating */
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+  GPIO_Init(GPIOE, &GPIO_InitStructure);
+
+  /* Enable AFIO clock */
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+
+  /* Connect EXTI0 Line to PE.03 pin */
+  GPIO_EXTILineConfig(GPIO_PortSourceGPIOE, GPIO_PinSource0);
+
+  /* Configure EXTI1 line */
+  EXTI_InitStructure.EXTI_Line = EXTI_Line0;
+  EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
+  EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising_Falling;  
+  EXTI_InitStructure.EXTI_LineCmd = ENABLE;
+  EXTI_Init(&EXTI_InitStructure);
+
+  /* Enable and set EXTI0 Interrupt to the lowest priority */
+  NVIC_InitStructure.NVIC_IRQChannel = EXTI0_IRQn;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x0F;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x0F;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  NVIC_Init(&NVIC_InitStructure);	
+}
 //主电掉电中断
 void EXTI15_10_IRQHandler(void)
 {
@@ -777,22 +815,22 @@ void EXTI15_10_IRQHandler(void)
 	}
 	else  //下降沿
 	{
-				power_bat_flag = 1;
-		   Led_Ctrl(LEDPOWER_OFF);//主电灯灭
-				EXTI->RTSR |= 1 << 12; //上升沿触发	
-        GPIO_WriteBit(VBAT_KEY_CTR,VBAT_KEY_PIN,Bit_SET);
-        TIMDelay_Nms(40);
-        GPIO_WriteBit(VBAT_KEY_CTR,VBAT_KEY_PIN,Bit_RESET);
+			power_bat_flag = 1;
+		  Led_Ctrl(LEDPOWER_OFF);//主电灯灭
+			EXTI->RTSR |= 1 << 12; //上升沿触发	
+      GPIO_WriteBit(VBAT_KEY_CTR,VBAT_KEY_PIN,Bit_SET);
+      TIMDelay_Nms(40);
+      GPIO_WriteBit(VBAT_KEY_CTR,VBAT_KEY_PIN,Bit_RESET);
 
-        VCC_EN_OFF;	
+      VCC_EN_OFF;	
 
-        send_buff[1] = EVENT_TYPE_POWER_FAULT;
-        send_buff[2] = 230;
-        send_buff[3] = 0xFE;
-        send_buff[4] = 0;
-        send_buff[5] = 0;
-        send_buff[6] = 0;
-         Loop_Revice(send_buff);		
+      send_buff[1] = EVENT_TYPE_POWER_FAULT;
+      send_buff[2] = 230;
+      send_buff[3] = 0xFE;
+      send_buff[4] = 0;
+      send_buff[5] = 0;
+      send_buff[6] = 0;
+      Loop_Revice(send_buff);		
 	}
 	
 	

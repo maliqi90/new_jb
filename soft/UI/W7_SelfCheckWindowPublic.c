@@ -3,9 +3,62 @@
 #include "UI_APP.h"
 
 uint8_t voiceself_flag = 0;
+uint8_t self_check_flag = 0;
+uint32_t self_timecount = 0;
 extern uint8_t         LastWinPointer[4];
 extern uint8_t         WinPointer;
 //extern void WinLoad(uint8_t index);
+void selfcheck(void)
+{
+	static uint8_t count;
+	if(self_check_flag == 1)
+	{
+
+		if((GetTickCount() - self_timecount)>2000)
+		{
+			self_timecount = GetTickCount();
+			count++;
+			if(count == 1)
+			{
+				 GUI_SetColor(GUI_RED);//红色
+	       GUI_FillRect(0, 0, 320, 240);
+			}
+			else if(count ==2)
+			{
+				  GUI_SetColor(GUI_BLACK);//黑色
+	        GUI_FillRect(0, 0, 320, 240);
+			}
+			else if(count ==3)
+			{
+				  GUI_SetColor(GUI_GREEN);//蓝色
+	        GUI_FillRect(0, 0, 320, 240);
+			}
+			else if(count ==4)
+			{
+          GUI_SetColor(GUI_YELLOW);//黄色
+	        GUI_FillRect(0, 0, 320, 240);				
+			}
+			else if(count == 5)
+			{
+        LED_ALARM_OFF;
+        LED_FAULT_OFF ;
+        LED_SELTFTTEST_OFF;
+        LED_BAT_OFF;
+        LED_POWER_OFF;				
+			}
+			else if(count == 6)
+			{
+          WinPointer = LastWinPointer[WinClass[W3_MENU_WINDOW_WIN].winclass_pr];//初始化光标指针
+          WinLoad(W3_MENU_WINDOW_WIN);				
+			}
+		}
+	}
+	else 
+	{
+		count = 0;
+		self_timecount = GetTickCount();
+	}
+}
 //声音自检
 void self_voice(void)
 {
@@ -20,24 +73,24 @@ void lcd_self(void)
     LED_BAT_ON;
     LED_POWER_ON;
     GUI_SetColor(GUI_WHITE);//白色
-	GUI_FillRect(0, 0, 320, 240);
+	  GUI_FillRect(0, 0, 320, 240);
     TIMDelay_Nms(500);
     TIMDelay_Nms(500);
     GUI_SetColor(GUI_RED);//红色
-	GUI_FillRect(0, 0, 320, 240);
+	  GUI_FillRect(0, 0, 320, 240);
     TIMDelay_Nms(500);
     TIMDelay_Nms(500);
     GUI_SetColor(GUI_BLACK);//黑色
-	GUI_FillRect(0, 0, 320, 240);
+	  GUI_FillRect(0, 0, 320, 240);
     TIMDelay_Nms(500);
     TIMDelay_Nms(500);
 //     Play_Voice(NORFLASH_FAULT_VOICE_BASE,1);
     GUI_SetColor(GUI_GREEN);//蓝色
-	GUI_FillRect(0, 0, 320, 240);
+	 GUI_FillRect(0, 0, 320, 240);
     TIMDelay_Nms(500);
     TIMDelay_Nms(500);
     GUI_SetColor(GUI_YELLOW);//黄色
-	GUI_FillRect(0, 0, 320, 240);
+	 GUI_FillRect(0, 0, 320, 240);
     TIMDelay_Nms(500);
     TIMDelay_Nms(500);
 //     Play_Voice(NORFLASH_COMMFAULT_VOICE_BASE,1);
@@ -51,10 +104,18 @@ void W7_SelfcheckWindowDisplay(void)
 {
     //lED灯自检
     //屏幕自检
-    lcd_self();
+	self_check_flag = 1;
+    LED_ALARM_ON;
+    LED_FAULT_ON ;
+    LED_SELTFTTEST_ON;
+    LED_BAT_ON;
+    LED_POWER_ON;
+    GUI_SetColor(GUI_WHITE);//白色
+	GUI_FillRect(0, 0, 320, 240);
+    //lcd_self();
 
-            WinPointer = LastWinPointer[WinClass[W3_MENU_WINDOW_WIN].winclass_pr];//初始化光标指针
-            WinLoad(W3_MENU_WINDOW_WIN);
+          //  WinPointer = LastWinPointer[WinClass[W3_MENU_WINDOW_WIN].winclass_pr];//初始化光标指针
+          //  WinLoad(W3_MENU_WINDOW_WIN);
 }
 
 void W7_SelfcheckWindowProcess(void)

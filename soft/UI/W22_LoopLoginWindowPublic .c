@@ -180,7 +180,7 @@ void W22_LoopLoginWindowProcess(void)
             }
             else
             {
-                loop_login_flag = 0;
+                loop_login_flag = 2;
                 LoopCfgSaveToFlash();
                 GUI_SetColor(GUI_LIGHTGRAY);
 	            GUI_FillRect(10, 216, 300, 240);

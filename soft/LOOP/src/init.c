@@ -401,7 +401,9 @@ void LOOP_CONFIG(void)
    TIM2_CONFIG();
 //TIM3_CONFIG();    
    TIM4_CONFIG();  
-   Loop_18V_Curr_EXTI1_Config();    
+   Loop_18V_Curr_EXTI1_Config(); 
+	 Loop_18V_Volt_EXTI0_Config();
+   	
 }
 //主备电切换初始化
 void Power_Sw_Init(void)

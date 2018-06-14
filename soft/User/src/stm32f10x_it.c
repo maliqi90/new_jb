@@ -51,7 +51,6 @@ uint8_t USB_Flag = 0;//USB和CAN标志位
 /*            Cortex-M3 Processor Exceptions Handlers                         */
 /******************************************************************************/
 void ADC1_2_IRQHandler(void)
-
 {
     ADC_ITConfig(ADC1,ADC_IT_AWD,DISABLE);
     if(SET == ADC_GetFlagStatus(ADC1,ADC_FLAG_AWD))
@@ -88,15 +87,15 @@ void EXTI1_IRQHandler(void)
     EXTI_ClearITPendingBit(EXTI_Line1);
   }
 }
-void EXTI5_IRQHandler(void)
+void EXTI0_IRQHandler(void)
 {
-  if(EXTI_GetITStatus(EXTI_Line3) != RESET)
+  if(EXTI_GetITStatus(EXTI_Line0) != RESET)
   {
     /* Toggle LED1 */
      loop_val.sht[1] = TRUE;
 
     /* Clear the  EXTI line 0 pending bit */
-    EXTI_ClearITPendingBit(EXTI_Line3);
+    EXTI_ClearITPendingBit(EXTI_Line0);
   }
 }
 //void EXTI4_IRQHandler(void)
@@ -233,68 +232,68 @@ void SysTick_Handler(void)
 *******************************************************************************/
 void USB_LP_CAN1_RX0_IRQHandler(void)
 {
-//    u8 cnt;
-//	can_rx_msg rx_msg;
-//	struct com_node *p;
-//	struct com_node *q;
-//    if(USB_Flag == 1)
-//    {
+    u8 cnt;
+	can_rx_msg rx_msg;
+	struct com_node *p;
+	struct com_node *q;
+    if(USB_Flag == 1)
+    {
       USB_Istr();
-//    }
-//    else
-//    {
-//	
-//	cnt = CAN1->RF0R & 3;
+    }
+    else
+    {
+	
+	cnt = CAN1->RF0R & 3;
 
-//	while (cnt != 0)
-//	{										//fifo挂起中断
-//		can_rec(&rx_msg);
-//		
-//		CAN1->RF0R |= CAN_RF0R_RFOM0;
-//		
-//		cnt = CAN1->RF0R & 7;
-//		
-//		if (rx_msg.IDE == CAN_ID_STD)
-//			continue;
-//		
-//		p = (struct com_node*)malloc(sizeof(struct com_node));
-//		if (p == NULL)
-//		{
-//			//删除发送缓存的最后一帧数据
-//			p = SEND_HEAD->pnext;
-//			q = SEND_HEAD;
+	while (cnt != 0)
+	{										//fifo挂起中断
+		can_rec(&rx_msg);
+		
+		CAN1->RF0R |= CAN_RF0R_RFOM0;
+		
+		cnt = CAN1->RF0R & 7;
+		
+		if (rx_msg.IDE == CAN_ID_STD)
+			continue;
+		
+		p = (struct com_node*)malloc(sizeof(struct com_node));
+		if (p == NULL)
+		{
+			//删除发送缓存的最后一帧数据
+			p = SEND_HEAD->pnext;
+			q = SEND_HEAD;
 
-//			if (p != NULL)
-//			{
-//				while (p->pnext != NULL)
-//				{
-//					q = p;
-//					p = p->pnext;					
-//				}
+			if (p != NULL)
+			{
+				while (p->pnext != NULL)
+				{
+					q = p;
+					p = p->pnext;					
+				}
 
-//				q->pnext = NULL;
-//				free(p);												//????? 增加frame_num暂未处理
+				q->pnext = NULL;
+				free(p);												//????? 增加frame_num暂未处理
 
-//				p = (struct com_node*)malloc(sizeof(struct com_node));//????? 增加frame_num暂未处理
-//				if (p == NULL)
-//				{
-//					continue;
-//				}
-//			}
-//			else
-//			{
-//				continue;
-//			}
-//		}
+				p = (struct com_node*)malloc(sizeof(struct com_node));//????? 增加frame_num暂未处理
+				if (p == NULL)
+				{
+					continue;
+				}
+			}
+			else
+			{
+				continue;
+			}
+		}
 
-//		p->pnext = NULL;
-//		
-//		p->id = rx_msg.ExtId;
-//		memcpy(p->buff, rx_msg.Data, 8);
+		p->pnext = NULL;
+		
+		p->id = rx_msg.ExtId;
+		memcpy(p->buff, rx_msg.Data, 8);
 
-//		insert_list(REC_HEAD, p);
-//	}       
-//    }
+		insert_list(REC_HEAD, p);
+	}       
+    }
 }
 //void USB_LP_CAN1_RX0_IRQHandler(void)
 //{

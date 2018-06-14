@@ -36,7 +36,7 @@
 extern u16 dev_addr; 
 extern const u8 DEVICE_IO_TYPE[256];
 
- LOOPS LOOP[2];               			// 定义回路结构型回路变量。
+LOOPS LOOP[2];               			// 定义回路结构型回路变量。
 LOOPDevice ALLDevices[2][256]; 			// 每个回路上256个回路器件型结构空间
 u8  OptingLoopNO;                   	// 当前正在操作的回路号0，1
 u32 CheckTypeTimeTicks;             	// 回路定期做器件类型检查，此变量是用于这个事情的时间计数器

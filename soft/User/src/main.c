@@ -100,22 +100,22 @@ int main(void)
     RTC_Init();
     
     norflash_read_comm_set((uint8_t*)&comm_set);//∂¡»° …Ë÷√
-//    if(comm_set.Can_Set == 1)
-//    {
-//        //RCC_APB1PeriphClockCmd(RCC_APB1Periph_USB, DISABLE);
-//        CAN1_CONFIG();
-//        can_init();  
-//        USB_Flag = 0;
-//         
-//    }
-//    else
-//    {
+    if(comm_set.Can_Set == 1)
+    {
+        //RCC_APB1PeriphClockCmd(RCC_APB1Periph_USB, DISABLE);
+        CAN1_CONFIG();
+        can_init();  
+        USB_Flag = 0;
+         
+    }
+    else
+    {
         Set_System();
         Set_USBClock();
         USB_Interrupts_Config();
         USB_Init();
          USB_Flag = 1;        
-//    }
+    }
 
 //     norflash_read_comm_set((uint8_t*)&comm_set);
 
@@ -187,7 +187,7 @@ int main(void)
         Key_Task();    
         RTC_Dis();
         EventTask();
-
+        selfcheck();
           
         if(GPIO_IN_STA == 0)
         {
@@ -215,8 +215,8 @@ int main(void)
 //        NumberID = ADC_Check();
         if(USB_Flag == 0)
         {
-         // communication_handle();
-            // can_transmit(&data);
+          communication_handle();
+             //can_transmit(&data);
         }
         else
         {

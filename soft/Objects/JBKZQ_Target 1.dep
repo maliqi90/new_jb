@@ -68,7 +68,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -82,7 +82,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -137,7 +137,7 @@ I (.\UI\W23_InfoWindowPublic.h)(0x5ABCA96C)
 I (.\UI\W24_ CommunicationWindowPublic.h)(0x5AD70360)
 I (.\UI\W25_ DeviceSetWindowPublic.h)(0x5AC447DA)
 I (.\UI\W26_ PasswordWindowPublic.h)(0x5ADFE946)
-F (.\User\src\main.c)(0x5B20B3C0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\User\src\main.c)(0x5B2234F0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\User\inc\include.h)(0x5B1F5E2A)
 I (.\User\inc\def.h)(0x5AFD16BA)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
@@ -206,7 +206,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -220,7 +220,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -275,7 +275,7 @@ I (.\UI\W23_InfoWindowPublic.h)(0x5ABCA96C)
 I (.\UI\W24_ CommunicationWindowPublic.h)(0x5AD70360)
 I (.\UI\W25_ DeviceSetWindowPublic.h)(0x5AC447DA)
 I (.\UI\W26_ PasswordWindowPublic.h)(0x5ADFE946)
-F (.\User\src\stm32f10x_it.c)(0x5B20BB36)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
+F (.\User\src\stm32f10x_it.c)(0x5B221BCA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
 I (.\User\inc\stm32f10x_it.h)(0x4D99A59E)
 I (D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h)(0x5825386C)
 I (.\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A67F998)
@@ -346,7 +346,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -360,7 +360,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -484,7 +484,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -498,7 +498,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -1163,7 +1163,7 @@ I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A6ABA96)
-F (.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd.s)(0x5B1F6CD0)(--cpu Cortex-M3 -g --apcs=interwork -I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 517" --pd "STM32F10X_HD SETA 1"--list .\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
+F (.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd.s)(0x5B2210C4)(--cpu Cortex-M3 -g --apcs=interwork -I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 517" --pd "STM32F10X_HD SETA 1"--list .\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
 F (.\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c)(0x4C0C587E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
 F (.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c)(0x5A61ABC0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
@@ -1622,7 +1622,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -1636,7 +1636,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -1917,7 +1917,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -1931,7 +1931,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -2044,7 +2044,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -2058,7 +2058,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -2237,7 +2237,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -2251,7 +2251,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -2407,7 +2407,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -2421,7 +2421,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -2545,7 +2545,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -2559,7 +2559,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -2684,7 +2684,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\DEVICE\device.h)(0x5B1DE99E)
@@ -2697,7 +2697,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -2752,7 +2752,7 @@ I (.\UI\W23_InfoWindowPublic.h)(0x5ABCA96C)
 I (.\UI\W24_ CommunicationWindowPublic.h)(0x5AD70360)
 I (.\UI\W25_ DeviceSetWindowPublic.h)(0x5AC447DA)
 I (.\UI\W26_ PasswordWindowPublic.h)(0x5ADFE946)
-F (.\VOICE\voice.c)(0x5ADE9FF6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\voice.o --omf_browse .\objects\voice.crf --depend .\objects\voice.d)
+F (.\VOICE\voice.c)(0x5B21FDFE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\voice.o --omf_browse .\objects\voice.crf --depend .\objects\voice.d)
 I (VOICE\voice.h)(0x5ADD6F04)
 I (.\User\inc\include.h)(0x5B1F5E2A)
 I (.\User\inc\def.h)(0x5AFD16BA)
@@ -2822,7 +2822,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -2836,7 +2836,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -2891,8 +2891,8 @@ I (.\UI\W23_InfoWindowPublic.h)(0x5ABCA96C)
 I (.\UI\W24_ CommunicationWindowPublic.h)(0x5AD70360)
 I (.\UI\W25_ DeviceSetWindowPublic.h)(0x5AC447DA)
 I (.\UI\W26_ PasswordWindowPublic.h)(0x5ADFE946)
-F (.\GPIO_CTRL\gpioctrl.c)(0x5B20C4AC)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\gpioctrl.o --omf_browse .\objects\gpioctrl.crf --depend .\objects\gpioctrl.d)
-I (GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+F (.\GPIO_CTRL\gpioctrl.c)(0x5B21DBE6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\gpioctrl.o --omf_browse .\objects\gpioctrl.crf --depend .\objects\gpioctrl.d)
+I (GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\User\inc\include.h)(0x5B1F5E2A)
 I (.\User\inc\def.h)(0x5AFD16BA)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
@@ -2961,7 +2961,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -2975,7 +2975,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -3030,7 +3030,7 @@ I (.\UI\W23_InfoWindowPublic.h)(0x5ABCA96C)
 I (.\UI\W24_ CommunicationWindowPublic.h)(0x5AD70360)
 I (.\UI\W25_ DeviceSetWindowPublic.h)(0x5AC447DA)
 I (.\UI\W26_ PasswordWindowPublic.h)(0x5ADFE946)
-F (.\LOOP\src\init.c)(0x5B20AEE2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\init.o --omf_browse .\objects\init.crf --depend .\objects\init.d)
+F (.\LOOP\src\init.c)(0x5B21D834)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\init.o --omf_browse .\objects\init.crf --depend .\objects\init.d)
 I (D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h)(0x5825386C)
 I (.\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A67F998)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
@@ -3060,7 +3060,7 @@ I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A6ABA96)
 I (.\LOOP\inc\init.h)(0x5B2094AE)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\User\inc\include.h)(0x5B1F5E2A)
 I (.\User\inc\def.h)(0x5AFD16BA)
 I (.\Emwin\inc\GUI_ConfDefaults.h)(0x52E7F280)
@@ -3113,7 +3113,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -3168,7 +3168,7 @@ I (.\UI\W23_InfoWindowPublic.h)(0x5ABCA96C)
 I (.\UI\W24_ CommunicationWindowPublic.h)(0x5AD70360)
 I (.\UI\W25_ DeviceSetWindowPublic.h)(0x5AC447DA)
 I (.\UI\W26_ PasswordWindowPublic.h)(0x5ADFE946)
-F (.\LOOP\src\loop.c)(0x5B20DE5C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\loop.o --omf_browse .\objects\loop.crf --depend .\objects\loop.d)
+F (.\LOOP\src\loop.c)(0x5B2216C2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\loop.o --omf_browse .\objects\loop.crf --depend .\objects\loop.d)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB2B78)
 I (.\LOOP\inc\loop_hw.h)(0x5B20D90E)
@@ -3237,7 +3237,7 @@ I (.\User\inc\delay.h)(0x5A7D55D4)
 I (.\EVENT\shieldtask.h)(0x5AAA36C4)
 I (.\User\inc\usbtask.h)(0x5AE16A96)
 I (.\EVENT\event.h)(0x5B1F3388)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -3251,7 +3251,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -3307,7 +3307,7 @@ I (.\UI\W24_ CommunicationWindowPublic.h)(0x5AD70360)
 I (.\UI\W25_ DeviceSetWindowPublic.h)(0x5AC447DA)
 I (.\UI\W26_ PasswordWindowPublic.h)(0x5ADFE946)
 I (.\FLASH\sflash_spi.h)(0x5AD0532E)
-F (.\LOOP\src\loop_hw.c)(0x5B20DB26)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\loop_hw.o --omf_browse .\objects\loop_hw.crf --depend .\objects\loop_hw.d)
+F (.\LOOP\src\loop_hw.c)(0x5B2214D2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\loop_hw.o --omf_browse .\objects\loop_hw.crf --depend .\objects\loop_hw.d)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB2B78)
 I (.\LOOP\inc\loop_hw.h)(0x5B20D90E)
 I (D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h)(0x5825386C)
@@ -3342,7 +3342,7 @@ I (.\User\inc\def.h)(0x5AFD16BA)
 I (.\Emwin\inc\GUI_ConfDefaults.h)(0x52E7F280)
 I (.\Emwin\Config\GUIConf.h)(0x58787626)
 I (.\LOOP\inc\init.h)(0x5B2094AE)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\User\inc\include.h)(0x5B1F5E2A)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB2B78)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
@@ -3390,7 +3390,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -3485,7 +3485,7 @@ I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
 I (.\LOOP\inc\DeviceTypeDefine.h)(0x59F130EC)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\User\inc\include.h)(0x5B1F5E2A)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB2B78)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
@@ -3529,7 +3529,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -3617,7 +3617,7 @@ I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
 I (.\User\inc\def.h)(0x5AFD16BA)
 I (.\Emwin\inc\GUI_ConfDefaults.h)(0x52E7F280)
 I (.\Emwin\Config\GUIConf.h)(0x58787626)
-F (.\LOOP\src\LoopSendOpt.c)(0x5B20CFBA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\loopsendopt.o --omf_browse .\objects\loopsendopt.crf --depend .\objects\loopsendopt.d)
+F (.\LOOP\src\LoopSendOpt.c)(0x5B21FC02)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\loopsendopt.o --omf_browse .\objects\loopsendopt.crf --depend .\objects\loopsendopt.d)
 I (.\LOOP\inc\loop.h)(0x5AFD1810)
 I (D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h)(0x5825386C)
 I (.\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h)(0x5A67F998)
@@ -3687,7 +3687,7 @@ I (.\FLASH\sflash_spi.h)(0x5AD0532E)
 I (.\EVENT\shieldtask.h)(0x5AAA36C4)
 I (.\User\inc\usbtask.h)(0x5AE16A96)
 I (.\LOOP\inc\init.h)(0x5B2094AE)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -3701,7 +3701,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -3786,7 +3786,7 @@ I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x5A6ABA96)
 I (.\LOOP\inc\stm32_flash.h)(0x5A8139D2)
-F (.\RTC\rt.c)(0x5B208BB6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\rt.o --omf_browse .\objects\rt.crf --depend .\objects\rt.d)
+F (.\RTC\rt.c)(0x5B21D14A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\rt.o --omf_browse .\objects\rt.crf --depend .\objects\rt.d)
 I (RTC\rtc.h)(0x5B173A9A)
 I (.\User\inc\include.h)(0x5B1F5E2A)
 I (.\User\inc\def.h)(0x5AFD16BA)
@@ -3856,7 +3856,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -3870,7 +3870,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -3925,7 +3925,7 @@ I (.\UI\W23_InfoWindowPublic.h)(0x5ABCA96C)
 I (.\UI\W24_ CommunicationWindowPublic.h)(0x5AD70360)
 I (.\UI\W25_ DeviceSetWindowPublic.h)(0x5AC447DA)
 I (.\UI\W26_ PasswordWindowPublic.h)(0x5ADFE946)
-F (.\UI\UI_APP.c)(0x5B20E50A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\ui_app.o --omf_browse .\objects\ui_app.crf --depend .\objects\ui_app.d)
+F (.\UI\UI_APP.c)(0x5B21B8AE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\ui_app.o --omf_browse .\objects\ui_app.crf --depend .\objects\ui_app.d)
 I (.\User\inc\include.h)(0x5B1F5E2A)
 I (.\User\inc\def.h)(0x5AFD16BA)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
@@ -3994,7 +3994,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -4008,7 +4008,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -4133,7 +4133,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -4147,7 +4147,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -4271,7 +4271,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -4285,7 +4285,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -4409,7 +4409,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -4423,7 +4423,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -4547,7 +4547,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -4561,7 +4561,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -4685,7 +4685,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -4699,7 +4699,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -4823,7 +4823,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -4837,7 +4837,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -4892,7 +4892,7 @@ I (.\UI\W23_InfoWindowPublic.h)(0x5ABCA96C)
 I (.\UI\W24_ CommunicationWindowPublic.h)(0x5AD70360)
 I (.\UI\W25_ DeviceSetWindowPublic.h)(0x5AC447DA)
 I (.\UI\W26_ PasswordWindowPublic.h)(0x5ADFE946)
-F (.\UI\W7_SelfCheckWindowPublic.c)(0x5B1C8EC6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\w7_selfcheckwindowpublic.o --omf_browse .\objects\w7_selfcheckwindowpublic.crf --depend .\objects\w7_selfcheckwindowpublic.d)
+F (.\UI\W7_SelfCheckWindowPublic.c)(0x5B2234A4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\w7_selfcheckwindowpublic.o --omf_browse .\objects\w7_selfcheckwindowpublic.crf --depend .\objects\w7_selfcheckwindowpublic.d)
 I (.\User\inc\include.h)(0x5B1F5E2A)
 I (.\User\inc\def.h)(0x5AFD16BA)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
@@ -4961,7 +4961,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -4975,7 +4975,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -5100,7 +5100,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -5114,7 +5114,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -5238,7 +5238,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -5252,7 +5252,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -5376,7 +5376,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -5390,7 +5390,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -5514,7 +5514,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -5528,7 +5528,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -5652,7 +5652,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -5666,7 +5666,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -5790,7 +5790,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -5804,7 +5804,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -5929,7 +5929,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -5943,7 +5943,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -6067,7 +6067,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -6081,7 +6081,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -6205,7 +6205,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -6219,7 +6219,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -6343,7 +6343,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -6357,7 +6357,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -6481,7 +6481,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -6495,7 +6495,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -6619,7 +6619,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -6633,7 +6633,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -6758,7 +6758,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -6772,7 +6772,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -6896,7 +6896,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -6910,7 +6910,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -6965,7 +6965,7 @@ I (.\UI\W23_InfoWindowPublic.h)(0x5ABCA96C)
 I (.\UI\W24_ CommunicationWindowPublic.h)(0x5AD70360)
 I (.\UI\W25_ DeviceSetWindowPublic.h)(0x5AC447DA)
 I (.\UI\W26_ PasswordWindowPublic.h)(0x5ADFE946)
-F (.\UI\W22_LoopLoginWindowPublic .c)(0x5AEAD4BE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o ".\objects\w22_looploginwindowpublic .o" --omf_browse ".\objects\w22_looploginwindowpublic .crf" --depend ".\objects\w22_looploginwindowpublic .d")
+F (.\UI\W22_LoopLoginWindowPublic .c)(0x5B21C06A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o ".\objects\w22_looploginwindowpublic .o" --omf_browse ".\objects\w22_looploginwindowpublic .crf" --depend ".\objects\w22_looploginwindowpublic .d")
 I (.\User\inc\include.h)(0x5B1F5E2A)
 I (.\User\inc\def.h)(0x5AFD16BA)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
@@ -7034,7 +7034,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -7048,7 +7048,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -7173,7 +7173,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -7187,7 +7187,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -7311,7 +7311,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -7325,7 +7325,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -7449,7 +7449,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -7463,7 +7463,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -7588,7 +7588,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -7602,7 +7602,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -7700,7 +7700,7 @@ I (.\Emwin\inc\SLIDER.h)(0x52E7F280)
 I (.\Emwin\inc\SPINBOX.h)(0x52E7F280)
 I (.\Emwin\inc\TEXT.h)(0x52E7F280)
 I (.\Emwin\inc\TREEVIEW.h)(0x52E7F280)
-F (.\CAN\can.c)(0x5AE126CE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
+F (.\CAN\can.c)(0x5B22232C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I.\Libraries\CMSIS\CM3\CoreSupport -I.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\USBCDC\inc -I.\User\inc -I.\Libraries\STM32_USB-FS-Device_Driver\inc -I.\LCD_Driver -I.\FLASH -I.\GPRS -I.\LOOP\inc -I.\VOICE -I.\GPIO_CTRL -I.\RTC -I.\Emwin\Config -I.\Emwin\inc -I.\UI -I.\EVENT -I.\CAN -I.\DEVICE -I.\Emwin\emWinTask -I.\Emwin\inc -I.\DEVICE -I.\cm_backtrace-I D:\soft\JB\New_JB\soft\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB2B78)
 I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB2B78)
 I (CAN\can.h)(0x5AFD17A0)
@@ -7806,7 +7806,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -7820,7 +7820,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)
@@ -8001,7 +8001,7 @@ I (.\LOOP\inc\LoopDataStruct.h)(0x59F130EC)
 I (.\LOOP\inc\LoopOpt.h)(0x5B20CFD0)
 I (.\LOOP\inc\LoopCfg.h)(0x5A813800)
 I (.\LOOP\inc\LoopDevTables.h)(0x5AFD1874)
-I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B20945C)
+I (.\GPIO_CTRL\gpio_ctrl.h)(0x5B21D6A4)
 I (.\VOICE\voice.h)(0x5ADD6F04)
 I (.\RTC\rtc.h)(0x5B173A9A)
 I (.\GPRS\gprs.h)(0x5B1F21E6)
@@ -8015,7 +8015,7 @@ I (.\UI\W3_MenuWindowPublic.h)(0x5AC19488)
 I (.\UI\W4_FaultWindowPublic.h)(0x5A24C54C)
 I (.\UI\W5_FireWindowPublic.h)(0x5A2508E6)
 I (.\UI\W6_ShiledWindowPublic.h)(0x5A2508FA)
-I (.\UI\W7_SelfCheckWindowPublic.h)(0x5A250920)
+I (.\UI\W7_SelfCheckWindowPublic.h)(0x5B2234CA)
 I (.\UI\W8_SetWindowPublic.h)(0x5A250934)
 I (.\UI\W9_SetTimeWindowPublic.h)(0x5A250944)
 I (.\UI\W10_EditDeviceWindowPublic.h)(0x5AE1477A)

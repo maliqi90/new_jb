@@ -150,7 +150,7 @@ void loop_short(u8 channel)							//回路短路处理
  
     LOOP[channel].LoopShortCntTick = GetTickCount(); // 保存关闭电源时的系统滴嗒
 
-    if (!LOOP[channel].OptStatFlags.StateBit.ShortReported_flag)  // 上报短路事件
+    if (!loop_short_flag)  // 上报短路事件
     {	
 		send_buff[0] = 0;
 		send_buff[1] = EVENT_TYPE_LOOP_FAULT;
