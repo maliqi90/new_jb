@@ -5,6 +5,7 @@ u32 timer_number1=0; //时间计数器
 u32 timer_number2=0; //时间超时计数器 
 volatile u8 timer_interr_flag=0; //秒中断标志位
 extern uint8_t WinIndex;
+extern uint8_t self_check_flag;
 tm Timer_value;  //时钟结构体  初始值：2017年2月8日
 static uint16_t bat_timecount = 0;
  uint8_t bat_flag = 0;
@@ -387,7 +388,7 @@ void RTC_Dis(void)
 //    char i;
 //    char flag = 0;
 //    uint8_t send_buff[10];
-    if(timer_interr_flag)
+    if((timer_interr_flag)&&(self_check_flag == 0))
     {
 //        lcd_time--;
 //        //

@@ -7,6 +7,7 @@ uint8_t self_check_flag = 0;
 uint32_t self_timecount = 0;
 extern uint8_t         LastWinPointer[4];
 extern uint8_t         WinPointer;
+uint8_t led_temp = 0;
 //extern void WinLoad(uint8_t index);
 void selfcheck(void)
 {
@@ -14,42 +15,73 @@ void selfcheck(void)
 	if(self_check_flag == 1)
 	{
 
-		if((GetTickCount() - self_timecount)>2000)
+		if((GetTickCount() - self_timecount)>2500)
 		{
 			self_timecount = GetTickCount();
 			count++;
 			if(count == 1)
 			{
+				Play_Voice(NORFLASH_POWERFAULT_VOICE_BASE,0);
 				 GUI_SetColor(GUI_RED);//红色
 	       GUI_FillRect(0, 0, 320, 240);
+				 LED_ALARM_OFF;
+        LED_FAULT_OFF ;
+        LED_SELTFTTEST_OFF;
+        LED_BAT_OFF;
+        LED_POWER_OFF;	
+				
+				//恢复LED
+				if((led_temp&0x01) == 0x01)
+				{
+					Led_Ctrl(LEDARAM_ON);
+				}
+				if((led_temp&0x02) == 0x02)
+				{
+					Led_Ctrl(LEDSHIELD_ON);
+				}
+				if((led_temp&0x04) == 0x04)
+				{
+					Led_Ctrl(LEDFAULT_ON);
+				}
+				if((led_temp&0x08) == 0x08)
+				{
+					Led_Ctrl(LEDPOWER_ON);
+				}
+				if((led_temp&0x10) == 0x10)
+				{
+					Led_Ctrl(LEDBAT_ON);
+				}
+				Led_Ctrl(LEDSELF_ON);
 			}
 			else if(count ==2)
 			{
+						Play_Voice(NORFLASH_HONMEFIRE_VOICE_BASE,0);
 				  GUI_SetColor(GUI_BLACK);//黑色
 	        GUI_FillRect(0, 0, 320, 240);
 			}
 			else if(count ==3)
 			{
+				Play_Voice(NORFLASH_COMMFAULT_VOICE_BASE,0);
 				  GUI_SetColor(GUI_GREEN);//蓝色
 	        GUI_FillRect(0, 0, 320, 240);
 			}
 			else if(count ==4)
 			{
+				Play_Voice(NORFLASH_KAIJI_VOICE_BASE,0);
           GUI_SetColor(GUI_YELLOW);//黄色
 	        GUI_FillRect(0, 0, 320, 240);				
 			}
 			else if(count == 5)
 			{
-        LED_ALARM_OFF;
-        LED_FAULT_OFF ;
-        LED_SELTFTTEST_OFF;
-        LED_BAT_OFF;
-        LED_POWER_OFF;				
+			    GUI_SetColor(GUI_GRAY);//灰色
+	        GUI_FillRect(0, 0, 320, 240);		
 			}
 			else if(count == 6)
 			{
           WinPointer = LastWinPointer[WinClass[W3_MENU_WINDOW_WIN].winclass_pr];//初始化光标指针
-          WinLoad(W3_MENU_WINDOW_WIN);				
+          WinLoad(W3_MENU_WINDOW_WIN);	
+          self_check_flag = 0;		
+	       Led_Ctrl(LEDSELF_OFF);				
 			}
 		}
 	}
@@ -105,6 +137,7 @@ void W7_SelfcheckWindowDisplay(void)
     //lED灯自检
     //屏幕自检
 	self_check_flag = 1;
+
     LED_ALARM_ON;
     LED_FAULT_ON ;
     LED_SELTFTTEST_ON;
@@ -112,6 +145,7 @@ void W7_SelfcheckWindowDisplay(void)
     LED_POWER_ON;
     GUI_SetColor(GUI_WHITE);//白色
 	GUI_FillRect(0, 0, 320, 240);
+	Play_Voice(NORFLASH_BATFAULT_VOICE_BASE,0);
     //lcd_self();
 
           //  WinPointer = LastWinPointer[WinClass[W3_MENU_WINDOW_WIN].winclass_pr];//初始化光标指针

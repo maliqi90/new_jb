@@ -181,18 +181,18 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>590</LineNumber>
+          <LineNumber>33</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134293688</Address>
+          <Address>134357438</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\LOOP\src\loop_hw.c</Filename>
+          <Filename>.\UI\W7_SelfCheckWindowPublic.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\JBKZQ\LOOP/src/loop_hw.c\590</Expression>
+          <Expression>\\JBKZQ\UI/W7_SelfCheckWindowPublic.c\33</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -280,6 +280,11 @@
           <count>16</count>
           <WinNumber>1</WinNumber>
           <ItemText>Timer_value,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>17</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>led_temp</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -1054,7 +1059,7 @@
 
   <Group>
     <GroupName>VOICE</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -1590,7 +1595,7 @@
 
   <Group>
     <GroupName>HanZi</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

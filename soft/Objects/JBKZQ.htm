@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\JBKZQ.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\JBKZQ.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Thu Jun 14 17:27:50 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Fri Jun 15 14:36:59 2018
 <BR><P>
 <H3>Maximum Stack Usage =        720 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1361,8 +1361,8 @@ Global Symbols
 <LI><a href="#[1b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetBkColor
 <LI><a href="#[1b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_DispStringAt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W13_ReSetWindowProcess
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W13_ReSetWindowDisplay
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W13_ReSetWindowDisplay
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W13_ReSetWindowProcess
 </UL>
 
 <P><STRONG><a name="[1e6]"></a>Dis_Sheild</STRONG> (Thumb, 498 bytes, Stack size 64 bytes, w6_shiledwindowpublic.o(i.Dis_Sheild))
@@ -1474,7 +1474,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[207]"></a>EventLedSoundDisplayProcess</STRONG> (Thumb, 732 bytes, Stack size 16 bytes, event.o(i.EventLedSoundDisplayProcess))
+<P><STRONG><a name="[207]"></a>EventLedSoundDisplayProcess</STRONG> (Thumb, 814 bytes, Stack size 16 bytes, event.o(i.EventLedSoundDisplayProcess))
 <BR><BR>[Stack]<UL><LI>Max Depth = 680 + Unknown Stack Size
 <LI>Call Chain = EventLedSoundDisplayProcess &rArr; GUI_Exec &rArr; GUI_Exec1 &rArr; WM_Exec &rArr; _DrawNext &rArr; WM__Paint &rArr; GUI_MEMDEV_Draw &rArr; GUI_MEMDEV_CopyToLCD &rArr; GUI_MEMDEV_CopyToLCDAt &rArr; GUI_MEMDEV__WriteToActiveOpaque &rArr; _WriteToActiveOpaque_8 &rArr; LCD__DrawBitmap_1bpp &rArr; LCD_FillRect
 </UL>
@@ -1657,7 +1657,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LOOP_CONFIG
 </UL>
 
-<P><STRONG><a name="[231]"></a>GPIO_Ctrl_Init</STRONG> (Thumb, 794 bytes, Stack size 24 bytes, gpioctrl.o(i.GPIO_Ctrl_Init))
+<P><STRONG><a name="[231]"></a>GPIO_Ctrl_Init</STRONG> (Thumb, 828 bytes, Stack size 24 bytes, gpioctrl.o(i.GPIO_Ctrl_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = GPIO_Ctrl_Init &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[232]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
@@ -2190,8 +2190,6 @@ Global Symbols
 <LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_MEMDEV_Select
 <LI><a href="#[2ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_MEMDEV_GetBitsPerPixel
 <LI><a href="#[2aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_MEMDEV_CopyToLCDAt
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SetPixelIndex
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GetRect
 <LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FillRect
 <LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DrawVLine
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DrawBitmap
@@ -2241,6 +2239,8 @@ Global Symbols
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_MEMDEV__WriteToActiveAlpha
 <LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_XorPixel
 <LI><a href="#[4a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_XY2PTR
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SetPixelIndex
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GetRect
 </UL>
 
 <P><STRONG><a name="[24e]"></a>GUI_ALLOC_Realloc</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, gui_realloc.o(i.GUI_ALLOC_Realloc))
@@ -2389,8 +2389,6 @@ Global Symbols
 <LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_MEMDEV_Select
 <LI><a href="#[2ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_MEMDEV_GetBitsPerPixel
 <LI><a href="#[2aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_MEMDEV_CopyToLCDAt
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SetPixelIndex
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GetRect
 <LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FillRect
 <LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DrawVLine
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DrawBitmap
@@ -2440,6 +2438,8 @@ Global Symbols
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_MEMDEV__WriteToActiveAlpha
 <LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_XorPixel
 <LI><a href="#[4a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_XY2PTR
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SetPixelIndex
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GetRect
 </UL>
 
 <P><STRONG><a name="[24d]"></a>GUI_ALLOC_h2p</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gui_alloc.o(i.GUI_ALLOC_h2p))
@@ -2834,7 +2834,6 @@ Global Symbols
 <LI><a href="#[215]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;guzhang
 <LI><a href="#[3d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Shield
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W12_ShieldSetWindowProcess
-<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 <LI><a href="#[1cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_All
 <LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_
 <LI><a href="#[413]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_device
@@ -2851,6 +2850,7 @@ Global Symbols
 <LI><a href="#[1dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_Fault
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W20_LightSetWindowProcess
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W20_LightSetWindowDisplay
+<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 </UL>
 
 <P><STRONG><a name="[21a]"></a>GUI_DispNextLine</STRONG> (Thumb, 22 bytes, Stack size 4 bytes, gui_char.o(i.GUI_DispNextLine))
@@ -2917,7 +2917,6 @@ Global Symbols
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W5_FireWindowDisplay
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W12_ShieldSetWindowProcess
 <LI><a href="#[4d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopbar
-<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 <LI><a href="#[1cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_All
 <LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_Info
@@ -2940,6 +2939,7 @@ Global Symbols
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W25_DeviceSetWindowProcess
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W22_LoopLoginWindowProcess
 <LI><a href="#[416]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_xinghao
+<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 </UL>
 
 <P><STRONG><a name="[4c2]"></a>GUI_DispStringInRect</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gui_dispstringinrect.o(i.GUI_DispStringInRect))
@@ -3096,7 +3096,6 @@ Global Symbols
 <LI><a href="#[1e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_Light_Set
 <LI><a href="#[1d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_ClearFlash
 <LI><a href="#[4d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopbar
-<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 <LI><a href="#[1de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_Fire
 <LI><a href="#[3b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ResetFlash
 <LI><a href="#[1e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_Sheild
@@ -3105,6 +3104,7 @@ Global Symbols
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W7_SelfcheckWindowDisplay
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W26_PasswordWindowProcess
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W22_LoopLoginWindowProcess
+<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 <LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_FillRectEx
 </UL>
 
@@ -3679,7 +3679,6 @@ Global Symbols
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W5_FireWindowDisplay
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W12_ShieldSetWindowProcess
 <LI><a href="#[4d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopbar
-<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 <LI><a href="#[1cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_All
 <LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_Info
@@ -3705,6 +3704,7 @@ Global Symbols
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W22_LoopLoginWindowProcess
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W20_LightSetWindowDisplay
 <LI><a href="#[416]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_xinghao
+<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 <LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_CURSOR_SelectEx
 <LI><a href="#[22b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_SetDefault
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cbBackWin
@@ -3762,7 +3762,6 @@ Global Symbols
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W5_FireWindowDisplay
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W12_ShieldSetWindowProcess
 <LI><a href="#[4d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopbar
-<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 <LI><a href="#[1cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_All
 <LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_Info
@@ -3791,6 +3790,7 @@ Global Symbols
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W20_LightSetWindowDisplay
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUIPROP_X_DispChar
 <LI><a href="#[416]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_xinghao
+<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 <LI><a href="#[22b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_SetDefault
 <LI><a href="#[442]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DrawNext
 </UL>
@@ -3848,7 +3848,6 @@ Global Symbols
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W5_FireWindowDisplay
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W12_ShieldSetWindowProcess
 <LI><a href="#[4d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopbar
-<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 <LI><a href="#[1cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_All
 <LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dis_Info
@@ -3874,6 +3873,7 @@ Global Symbols
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W20_LightSetWindowProcess
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W20_LightSetWindowDisplay
 <LI><a href="#[416]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_xinghao
+<LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Edit_Device
 <LI><a href="#[34a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_OnPaint
 <LI><a href="#[306]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HEADER_AddItem
 <LI><a href="#[22b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GL_SetDefault
@@ -5451,12 +5451,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Resume_Init
 </UL>
 
-<P><STRONG><a name="[1fe]"></a>Led_Ctrl</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, gpioctrl.o(i.Led_Ctrl))
+<P><STRONG><a name="[1fe]"></a>Led_Ctrl</STRONG> (Thumb, 294 bytes, Stack size 8 bytes, gpioctrl.o(i.Led_Ctrl))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Led_Ctrl
 </UL>
 <BR>[Calls]<UL><LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteBit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[367]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LightShieldLed
+<BR>[Called By]<UL><LI><a href="#[4e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;selfcheck
+<LI><a href="#[367]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LightShieldLed
 <LI><a href="#[231]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Ctrl_Init
 <LI><a href="#[207]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventLedSoundDisplayProcess
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
@@ -5899,8 +5900,10 @@ Global Symbols
 <LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteBit
 <LI><a href="#[393]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timerx_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[4e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;selfcheck
+<LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[207]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventLedSoundDisplayProcess
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W7_SelfcheckWindowDisplay
 </UL>
 
 <P><STRONG><a name="[323]"></a>Post0_Process</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, usb_core.o(i.Post0_Process))
@@ -5984,7 +5987,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_IRQHandler
 </UL>
 
-<P><STRONG><a name="[399]"></a>RTC_Dis</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, rt.o(i.RTC_Dis))
+<P><STRONG><a name="[399]"></a>RTC_Dis</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, rt.o(i.RTC_Dis))
 <BR><BR>[Stack]<UL><LI>Max Depth = 280 + Unknown Stack Size
 <LI>Call Chain = RTC_Dis &rArr; time_num &rArr; time_show &rArr;  time_num (Cycle)
 </UL>
@@ -7477,10 +7480,11 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> ui_app.o(.constdata)
 </UL>
-<P><STRONG><a name="[be]"></a>W7_SelfcheckWindowDisplay</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, w7_selfcheckwindowpublic.o(i.W7_SelfcheckWindowDisplay))
+<P><STRONG><a name="[be]"></a>W7_SelfcheckWindowDisplay</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, w7_selfcheckwindowpublic.o(i.W7_SelfcheckWindowDisplay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = W7_SelfcheckWindowDisplay &rArr; GUI_FillRect &rArr; WM__InitIVRSearch &rArr; WM__GetNextIVR &rArr; WM__ActivateClipRect &rArr; _SetClipRectUserIntersect &rArr; LCD_SetClipRectEx &rArr; GUI__IntersectRects
 </UL>
 <BR>[Calls]<UL><LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteBit
+<LI><a href="#[208]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Play_Voice
 <LI><a href="#[1b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetColor
 <LI><a href="#[1d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_FillRect
 </UL>
@@ -8764,12 +8768,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;selfcheck
 <LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W6_ShieldWindowDisplay
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W13_ReSetWindowProcess
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W10_EditDeivceWindowProcess
 <LI><a href="#[328]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WinKeyProcess
 <LI><a href="#[4d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;loopbar
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W6_ShieldWindowProcess
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W26_PasswordWindowProcess
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W13_ReSetWindowProcess
 </UL>
 
 <P><STRONG><a name="[381]"></a>WriteEventToFlash</STRONG> (Thumb, 240 bytes, Stack size 40 bytes, event.o(i.WriteEventToFlash))
@@ -8974,8 +8978,8 @@ Global Symbols
 <LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[40b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WinLoad
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W14_FireQueryWindowDisplay
 <LI><a href="#[218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FireWindows
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;W14_FireQueryWindowDisplay
 </UL>
 
 <P><STRONG><a name="[47f]"></a>dis_sheildevent</STRONG> (Thumb, 186 bytes, Stack size 40 bytes, commenu.o(i.dis_sheildevent))
@@ -9774,14 +9778,16 @@ Global Symbols
 <LI><a href="#[36c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sFLASH_NOR_Pageprogram
 </UL>
 
-<P><STRONG><a name="[4e1]"></a>selfcheck</STRONG> (Thumb, 282 bytes, Stack size 8 bytes, w7_selfcheckwindowpublic.o(i.selfcheck))
+<P><STRONG><a name="[4e1]"></a>selfcheck</STRONG> (Thumb, 436 bytes, Stack size 8 bytes, w7_selfcheckwindowpublic.o(i.selfcheck))
 <BR><BR>[Stack]<UL><LI>Max Depth = 432 + Unknown Stack Size
 <LI>Call Chain = selfcheck &rArr; WinLoad &rArr; Stay_Flag &rArr; _ShowBMPEx &rArr; GUI_BMP_DrawEx &rArr; _Draw &rArr; _DrawBitmap_Pal &rArr; LCD_DrawBitmap &rArr; LCD_FillRect
 </UL>
 <BR>[Calls]<UL><LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteBit
 <LI><a href="#[40b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WinLoad
+<LI><a href="#[208]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Play_Voice
 <LI><a href="#[1b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_SetColor
 <LI><a href="#[1d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_FillRect
+<LI><a href="#[1fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_Ctrl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -12214,12 +12220,12 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ALLOC_UnlockH
 <LI><a href="#[241]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GUI_ALLOC_LockH
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SetPixelIndex
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GetPixelIndex
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FillRect
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_FillRect
 <LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DrawVLine
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_DrawBitmap
 <LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_XorPixel
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SetPixelIndex
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GetPixelIndex
 </UL>
 
 <P><STRONG><a name="[148]"></a>_XorPixel</STRONG> (Thumb, 82 bytes, Stack size 32 bytes, guidev_32.o(i._XorPixel))

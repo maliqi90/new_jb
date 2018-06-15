@@ -285,7 +285,7 @@ void GPIO_Ctrl_Init(void)
     LED_ALARM_OFF;
     LED_FAULT_OFF ;
     LED_SELTFTTEST_OFF;
-   // LED_BAT_OFF;
+    LED_BAT_OFF;
     LED_POWER_OFF;
 
 //Õ‚≤ø÷–∂œ12≥ı ºªØ
@@ -296,6 +296,7 @@ void GPIO_Ctrl_Init(void)
 	{
 		power_bat_flag = 0;
 		 Led_Ctrl(LEDPOWER_ON);
+		 led_temp |= (1<<3);
 		VCC_EN_ON;
 	  EXTI->FTSR |= 1 << 12; //œ¬Ωµ—ÿ¥•∑¢		
 	}
@@ -310,6 +311,7 @@ void GPIO_Ctrl_Init(void)
      send_buff[6] = 0;
      Loop_Revice(send_buff);
 		 Led_Ctrl(LEDPOWER_OFF);
+		  led_temp &= ~(1<<3);
 		 VCC_EN_OFF;
 		 EXTI->RTSR |= 1 << 12; //…œ…˝—ÿ¥•∑¢	
 	}
@@ -338,35 +340,45 @@ void Led_Ctrl(uint8_t Type)
     switch(Type)
     {
         case LEDARAM_ON: //ªæØµ∆µ„¡¡
-             LED_ALARM_ON;            
+             LED_ALARM_ON;        
+             led_temp |= 0x01;				
             break;
         case LEDARAM_OFF: //ªæØµ∆√
             LED_ALARM_OFF;
+				    led_temp &= ~(0x01);
             break;
         case LEDSHIELD_ON://∆¡±Œµ∆¡¡
             faultled_flag = 1;
             systickcount = 0;
+				    led_temp |= (1<<1);
             break;
         case LEDSHIELD_OFF://∆¡±Œµ∆√
             faultled_flag = 0;
+				    led_temp &= ~(1<<1);
             break;
         case LEDFAULT_ON://π ’œµ∆¡¡
             LED_FAULT_ON;
+				    led_temp |= (1<<2);
             break;
         case LEDFAULT_OFF://π ’œµ∆√
             LED_FAULT_OFF;
+			    	led_temp &= ~(1<<2);
             break;
         case LEDBAT_ON://±∏µÁµ∆¡¡
             LED_BAT_ON;
+				     led_temp |= (1<<4);
             break;
         case LEDBAT_OFF://±∏µÁµ∆√
             LED_BAT_OFF;
+				   led_temp &= ~(1<<4);
             break;
         case LEDPOWER_ON://÷˜µÁµ∆¡¡
             LED_POWER_ON;
+				   led_temp |= (1<<3);
             break;
         case LEDPOWER_OFF://÷˜µÁµ∆√
             LED_POWER_OFF;
+				    led_temp &= ~(1<<3);
             break;
         case LEDSELF_ON://◊‘ºÏµ∆¡¡
             LED_SELTFTTEST_ON;

@@ -257,6 +257,7 @@ void EventLedSoundDisplayProcess(uint8_t EventType)
 	{
 		case EVENT_TYPE_ALARM:
              LED_ALARM_ON;
+		         led_temp |= 0x01;
              RELAY_ON;
              Play_Voice(NORFLASH_FIRE_VOICE_BASE,2);
               voice_flag = 1;
@@ -302,6 +303,8 @@ void EventLedSoundDisplayProcess(uint8_t EventType)
 		case EVENT_TYPE_FAULT://故障
              voice_flag = 1;
             Led_Ctrl(LEDSHIELD_OFF);
+		        led_temp |= (1<<2);
+		        led_temp &= ~(1<<1);
             LED_FAULT_ON;
            switch(EventType)
            {
@@ -355,15 +358,18 @@ void EventLedSoundDisplayProcess(uint8_t EventType)
 		case EVENT_TYPE_LOOPFAULT_RESUME:
     case EVENT_TYPE_POWER_FAULT_RESUME:
 		case EVENT_TYPE_FAULT_RESUME://故障恢复
+			 
             if(GetEventFaultCount() == 0)
             {
                 if(EventShieldRamCurrentPointer > 0)
                 {
                    Led_Ctrl(LEDSHIELD_ON);
+									 led_temp |= (1<<1);
                 }
                 else
                 {
                      LED_FAULT_OFF;
+									 led_temp &= ~(1<<2);
                 }
             }
             else
@@ -408,6 +414,7 @@ void EventLedSoundDisplayProcess(uint8_t EventType)
             if(GetEventFaultCount()==0)
             {
                 Led_Ctrl(LEDSHIELD_ON);
+							  led_temp |= (1<<1);
                 //LED_SHEILD_ON;
             }
 //            if(GetEventAlarmCount!=0)
@@ -451,6 +458,7 @@ void EventLedSoundDisplayProcess(uint8_t EventType)
              if(GetEventFaultCount()==0)
              {
                  Led_Ctrl(LEDSHIELD_OFF);
+							    led_temp &= ~(1<<1);
              }
 //            if(GetEventAlarmCount!=0)
 //            {

@@ -196,6 +196,7 @@ extern void read_power(void);
 extern void power_off(void);
 extern volatile uint8_t powernum;
 extern void Loop_18V_Curr_EXTI1_Config(void);
+extern uint8_t led_temp;
 extern void Loop_18V_Volt_EXTI0_Config(void);
 #endif
 
